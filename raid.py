@@ -27,7 +27,7 @@ raid = ['md0', 'md1', 'md2', 'md125']
 
 for i in raid:
     if mds.used(i) == 2:
-        print "raid not ok"
+        print "raid is ok"
 
     else:
         os.system(raidcmd)
